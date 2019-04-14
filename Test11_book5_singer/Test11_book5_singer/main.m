@@ -18,12 +18,18 @@ void singTheSong (int numberOfBotles)
         singTheSong(oneFewer); // This function calls itself!
         NSLog(@"Put a bottle in the recycling, %d empty bottles in the bin.\n", numberOfBotles);
     }
-        
 }
+int getCatYears (int year){
+    int catYears = 2019 - year;
+    NSLog (@"Cat years = %i", catYears);
+    return catYears;
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        singTheSong(5);
+       // singTheSong(5);
+        getCatYears(2013);
     }
     return 0;
 }
